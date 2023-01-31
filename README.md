@@ -1,38 +1,64 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rick and Morty API
 
-## Getting Started
+### 📜 Rick and Morty API built with Next JS, React and Tailwind
 
-First, run the development server:
+🔗 Live Demo: [rick-and-morty.ekurt.dev](https://rick-and-morty.ekurt.dev)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+![rick-and-morty](https://rick-and-morty.ekurt.dev/rick-and-morty.png)
+
+## ✨ Features
+
+- Character Details
+- Pagination
+- [Get all characters](https://rick-and-morty.ekurt.dev/api) `/api`
+- [Get all characters with {pagination}](https://rick-and-morty.ekurt.dev/api/2) `/api/2`
+- [Get a single character with {id}](https://rick-and-morty.ekurt.dev/api/character/1) `/api/character/1`
+
+## 💻 Tech Stack
+
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white) 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white)
+![Yarn](https://img.shields.io/badge/yarn-%232C8EBB.svg?style=for-the-badge&logo=yarn&logoColor=white)
+
+## ⚙️ Development
+
+#### Clone remote repo to your local
+
+```
+git clone https://github.com/ekurt/rick-and-morty-api.git
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+#### Change directory
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+```
+cd rick-and-morty-api
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+#### Install dependencies
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+```
+yarn
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+#### Happy Hacking 🎉
 
-## Learn More
+```
+yarn dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+#### Build:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```
+yarn build
+```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+#### Lint:
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+```
+yarn lint
+```
