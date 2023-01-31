@@ -43,7 +43,7 @@ export default function CharacterDetail({
         <p>Status: {status}</p>
         <p>Species: {species}</p>
         <p>Gender: {gender}</p>
-        <p>Origin Name: {origin.name}</p>
+        <p>Origin Name: {origin?.name}</p>
         <p>Location Name: {location.name}</p>
       </div>
     </div>

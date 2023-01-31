@@ -1,9 +1,14 @@
 import CharacterCard from "@/components/CharacterCard";
 import Pagination from "@/components/Pagination";
 
+export const dynamic = "force-dynamic",
+  dynamicParams = true,
+  revalidate = true;
+
 async function fetchData(page) {
   const response = await fetch(
-    `https://rickandmortyapi.com/api/character?page=${page}`
+    `https://rickandmortyapi.com/api/character?page=${page}`,
+    { next: { revalidate: 86400 } }
   );
   const data = await response.json();
 
