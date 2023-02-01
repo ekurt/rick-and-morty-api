@@ -17,6 +17,10 @@ export default function Pagination({ next, prev }) {
     setShow({ ...show, [param]: true });
     setTimeout(() => {
       setShow({ ...show, [param]: false });
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      });
     }, 500);
   };
 
