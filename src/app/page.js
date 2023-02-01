@@ -16,12 +16,12 @@ async function fetchData(page) {
 }
 
 export default async function Home(req) {
-  const page = req.searchParams.page;
+  const page = req.searchParams.page ? req.searchParams.page : 1;
   const data = await fetchData(page);
   const { next, prev } = data.info;
 
   const allCharacters = data.results.map((char) => (
-    <CharacterCard key={char.id} {...char} />
+    <CharacterCard key={char.id} page={page} {...char} />
   ));
 
   return (

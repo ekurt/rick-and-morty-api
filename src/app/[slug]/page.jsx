@@ -1,3 +1,4 @@
+import BackToHome from "@/components/BackToHome";
 import CharacterDetail from "@/components/CharacterDetail";
 
 export const dynamic = "force-dynamic",
@@ -15,12 +16,14 @@ async function fetchData(slug) {
   return data;
 }
 
-export default async function Home({ params }) {
-  const data = await fetchData(params.slug);
+export default async function Home(req) {
+  const data = await fetchData(req.params.slug);
+  const page = req.searchParams.page;
 
   return (
     <>
-      <div className="w-full flex justify-center items-center">
+      <div className="w-full flex flex-col justify-center items-center">
+        <BackToHome page={page} />
         <CharacterDetail {...data} />
       </div>
     </>

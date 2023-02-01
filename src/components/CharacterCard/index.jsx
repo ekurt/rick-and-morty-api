@@ -4,9 +4,9 @@ import Image from "next/image";
 import Link from "next/link";
 import slugify from "slugify";
 
-export default function CharacterCard({ id, name, image }) {
+export default function CharacterCard({ id, name, image, page }) {
   return (
-    <Link href={`/${slugify(name, { lower: true })}-${id}`}>
+    <Link href={`/${slugify(name, { lower: true })}-${id}?page=${page}`}>
       <div
         className="w-[300px] flex flex-col justify-center items-center hover:scale-125 hover:rotate-6 duration-200 transition-transform ease-linear"
         key={id}
